@@ -203,11 +203,12 @@
             <a-sound id="miAudio" src="meditacion3.mp3" autoplay="true" volume="3"  maxDistance="6" position="31.9 4.8 -38.7" loop="true"></a-sound>
 
             <script>
-                // Esperar 10 segundos y luego reproducir el sonido
-                setTimeout(function() {
-                  var audioElement = document.getElementById('miAudio');
-                  audioElement.play();
-                }, 10000); // 10000 milisegundos = 10 segundos
+                window.addEventListener('load', function() {
+                  setTimeout(function() {
+                    var audioElement = document.getElementById('miAudio');
+                    audioElement.play();
+                  }, 10000); // 10000 milisegundos = 10 segundos
+                });
               </script>
 
             
