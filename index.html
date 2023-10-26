@@ -5,9 +5,11 @@
 </head>
 <body>
     <a-scene>
-        <!-- Fondo -->
-        <a-sky src="https://i.imgur.com/rHCZC8Q.jpg" rotation="0 0 0"></a-sky>
-        <a-sky color="#B3E5FC" rotation="0 0 0"></a-sky>
+    
+         <!-- Esfera para representar el cielo o ambiente exterior -->
+        <a-sphere material="src: url(cielo.jpg);" radius="100"></a-sphere>
+        
+        
         <!-- Suelo -->
         <a-plane position="0 0 -30" rotation="-90 0 0" width="400" height="400" ></a-plane>
 
