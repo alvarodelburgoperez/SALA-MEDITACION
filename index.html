@@ -7,7 +7,9 @@
     <a-scene>
     
          <!-- Esfera para representar el cielo o ambiente exterior -->
-        <a-sphere material="src: url(cielo.jpg);" radius="100"></a-sphere>
+        <!--<a-sphere material="src: url(cielo.jpg);" radius="100"></a-sphere>-->
+
+        <a-sphere radius="10" phi-length="180" color="#FFC65D"></a-sphere>
         
         
         <!-- Suelo -->
@@ -239,9 +241,6 @@
         <a-box position="0 6.5 -38.7" rotation="-90 0 0" width="65" height="37.5" depth="0.1" color=" beige "></a-box>
         <a-box position="0 6.5 -62.45" rotation="-90 0 0" width="20" height="10" depth="0.1" color=" beige "></a-box>
 
-
-        <!-- Luz direccional -->
-        <a-light type="directional" position="-5 10 5" target="a-box"></a-light>
 
         <!-- Luz ambiental -->
         <a-light type="ambient" color="#888"></a-light>
